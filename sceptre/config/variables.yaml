@@ -1,0 +1,6 @@
+template_prefix: >
+  "Sceptre managed infrastructure. Please use sceptre to configure the
+  resources in this "
+template_postfix: >
+  "Designed by UCOP Applied Cloud Management and Engineering in Oakland,
+  California. patent pending."

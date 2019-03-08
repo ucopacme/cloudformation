@@ -1,0 +1,12 @@
+---
+template_path: templates/get_me_a_bucket.py
+template_bucket_name: "{{var.prj}}-{{environment_path.0}}"
+sceptre_user_data:
+  env: {{environment_path.0}}
+  app: {{var.app}}
+  team: {{var.team}}
+  prj: {{var.prj}}
+  region: {{var.region}}
+  template_prefix: {{var.template_prefix}}
+  template_postfix: {{var.template_postfix}}
+  bucket_versioning: "Disabled"
