@@ -1,2 +1,3 @@
 sceptre==1.4.2
-GitPython==2.1.11
+GitPython
+troposphere
