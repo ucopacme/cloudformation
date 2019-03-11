@@ -9,4 +9,4 @@ sceptre_user_data:
   region: {{var.region}}
   template_prefix: {{var.template_prefix}}
   template_postfix: {{var.template_postfix}}
-  bucket_versioning: "Disabled"
+  bucket_versioning: "Suspended"
