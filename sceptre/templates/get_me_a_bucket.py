@@ -43,7 +43,7 @@ class GetMeABucket(object):
         self.add_bucket()
 
     def add_description(self):
-        self.description = self.template.add_description(
+        self.description = self.template.set_description(
             self.sceptre_user_data["template_prefix"] + ' ' + self.app_env +
             " get me a bucket stack. " +
             self.sceptre_user_data["template_postfix"]
