@@ -12,20 +12,13 @@ Option:
   -v --version        Show version.
 """
 
-from troposphere import (
-    GetAtt,
-    Join,
-    Output,
-    Parameter,
-    Ref,
-    Split,
-    Sub,
-    Tags,
-    Template,
+from troposphere import Template
+
+
+from cloudseeder import (
+    bucket,
+    watermark
 )
-
-
-import bucket, watermark
 
 
 class GetMeABucket(object):
