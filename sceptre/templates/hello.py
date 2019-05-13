@@ -26,6 +26,7 @@ class GetMeABucket(object):
         self.template = Template()
         self.sceptre_user_data = sceptre_user_data
         self.repo = watermark.repo()
+        self.builder = watermark.gci()
         self.app_env = watermark.app_env(
             self.sceptre_user_data["app"],
             self.sceptre_user_data["env"]
@@ -42,6 +43,7 @@ class GetMeABucket(object):
     def my_bucket(self):
         mytags = watermark.create_tags(
             self.sceptre_user_data["app"],
+            self.builder["UserId"],
             self.sceptre_user_data["env"],
             self.sceptre_user_data["team"],
             self.repo.remotes.origin.url
